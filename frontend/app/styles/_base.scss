@@ -1,0 +1,42 @@
+.container {
+  max-width: 1200px;
+  min-width: 300px;
+  width: auto;
+  background-color: $base;
+  display: block;
+  margin: 0 auto;
+
+  &:before, &:after {
+    clear: both;
+    height: 0;
+    display: block;
+    content: "";
+  }
+}
+
+.full-screen {
+  min-height: 100vh;
+  height: 100%;
+}
+
+.hero {
+  width: 100%;
+  display: block;
+  height: 100vh;
+  min-height: 50%;
+  background-attachment: fixed;
+  background-color: $white;
+  background-image: url(../img/erase.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  background-position-y: 200px;
+  background-position-x: 50vw;
+}
+
+.main {
+  background-color: $red;
+  height: 100vh;
+  display: block;
+}

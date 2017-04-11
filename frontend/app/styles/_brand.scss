@@ -1,0 +1,18 @@
+$black: #0d1b35;
+$white: #fff;
+$red: #f45b69;
+$gray: #515151;
+$base: #f2f2f2;
+
+.logo {
+  &.animated {
+    background-image: url(../img/retcon_logo_animated.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 830px;
+    height: 280px;
+    display: block;
+    margin: 2em;
+  }
+}
