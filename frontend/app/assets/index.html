@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>ret.con</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/css/full.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i|Source+Sans+Pro:400,900" rel="stylesheet">
+
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script>
     <script src="js/angular.min.js"></script>
@@ -13,9 +15,13 @@
     <script src="js/controllers/home-controller.js"></script>
   </head>
   <body>
-    <div class="main" ng-controller="HomeController">
-      <input type="text" value="{{ title }}"/>
-    </div>
+    <section class="hero" ng-controller="HomeController">
+      <h1 class="logo animated"></h1>
+    </section>
+
+    <main class="main">
+      <h2 class="subtitle">Retroactive Continuity Community</h2>
+    </main>
     
   </body>
 </html>
