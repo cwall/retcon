@@ -1,3 +1,8 @@
+$black: #0d1b35;
+$white: #fff;
+$red: #f45b69;
+$gray: #515151;
+$base: #f2f2f2;
 // Hard reset
 
 html, body, div, span, applet, object, iframe,
@@ -37,11 +42,9 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  background-color: $white;
   width: 100%;
   height: 100%;
   position: relative;
-  color: $black;
   line-height: 1;
 }
 
@@ -75,37 +78,49 @@ ul {
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: Bronkoh;
+    font-weight: normal;
+    font-style: normal;
+
+    &.inline {
+        display: inline-block;
+    }
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.35rem;
+}
+
+h3 {
+    font-size: 2.825rem;
+}
+
+h4 {
+    font-size: 2.2rem;
+}
+
+h5 {
+    font-size: 1.7rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
 .inline {
   display: inline-block;
 }
 
-// Fonts
-// font-family: 'Source Sans Pro', sans-serif;
-// font-family: 'Droid Serif', serif;
 
-h1,h2,h3,h4,h5,h6 {
-  display: block;
-  color: $black;
-
-  &.inline {
-    @extend .inline;
-    margin-right: 1em;
-  }
-
-  &.subtitle {
-    font-family: 'Droid Serif', serif;
-    color: $gray;
-    font-size: 1.2em;
-    font-style: oblique;
-  }
-
-  &.underlined {
-    padding-bottom: 5px;
-    border-bottom: 1px solid $base;
-    margin-bottom: 1em;
-    width: 100%;
-    display: block;
-  }
+button {
+  border: none;
+  padding: 12px;
+  text-align: center;
+  background-color: $base;
+  cursor: pointer;
 }
-
-button {}
